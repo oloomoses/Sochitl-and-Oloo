@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="javascript" src="js/bootstrap.js"></script>
   </head>
 
   <body>
@@ -11,38 +13,78 @@
       
     <h1 id="title">Hello world, we are software developers!</h1>
 
-    <p id="description">
-      This is a survey to know about you.
-    </p>
+    <div class="container">
 
-    <form id="survey-form">
+      <p id="description">
+        This is a survey to know about you.
+      </p>
 
-      <label id="name-label">Enter Name:</label>
-      <input id="name" type="text" required placeholder="Enter your name" />
+      <form id="survey-form">
 
-      <label id="email-label">Enter Email:</label>
-      <input type="email" name="email" id="email" required placeholder="Enter your email"/>
+        <div class="form-group">
+          <label id="name-label">Enter Name:</label>
+          <input  class="form-control" id="name" type="text" required placeholder="Enter your name" />
+        </div>
 
-      <label id="number-label">Enter A Number:</label>
-      <input type="number" id="number" required min="1" max="90" placeholder="Enter a numer between 1 and 90"/>
+        <div class="form-group">
+          <label id="email-label">Enter Email:</label>
+          <input class="form-control" type="email" name="email" id="email" required placeholder="Enter your email"/>
+        </div>
 
-      <select id="dropdown">
-        <option value="0">First option</option>
-        <option value="1">Second option</option>
-      </select>
+        <div class="form-group">
+          <label id="number-label">Enter A Number:</label>
+          <input class="form-control" type="number" id="number" required min="1" max="90" placeholder="Enter a numer between 1 and 90"/>
+        </div>
 
-      <input type="radio" name="name" value="1">
-      <input type="radio" name="name" value="2">
-      <input type="radio" name="name" value="3">
+        <div class="form-group">
+          <p>Select your country:</p>
+        </div>
+        <div class="form-group">
+          <select id="dropdown" class="form-control">
+            <option value="0">Kenya</option>
+            <option value="1">Mexico</option>
+          </select>
+        </div>
 
-      <input type = "checkbox" value="one">
-      <input type = "checkbox" value="two">
-      <input type = "checkbox" value="three">
+        <div class="form-group">
+          <label name="radio1-label">Male</label>
+          <input type="radio" name="gender" value="1">
+          <label name="radio2-label">Female</label>
+          <input type="radio" name="gender" value="2">
+        </div>
+        <div class="form-group">
+          <p>Are you student?:</p>
+        </div>
+        <div class="form-group">
+          <label name="radio3-label">Yes</label>
+          <input type="radio" name="student" value="3">
+          <label name="radio4-label">No</label>
+          <input type="radio" name="student" value="4">
+        </div>
 
-      <textarea></textarea>
-      <input type="submit" id="submit" name="submit" value="submit">
+        <div class="form-group">
+          <p>Preferred programming languages:</p>
+        </div>
+        <div class="form-group">
+          <label name="chk1-label">Javascript</label>
+          <input type = "checkbox" value="one">
+          <label name="chk2-label">C#</label>
+          <input type = "checkbox" value="two">
+          <label name="chk3-label">Python</label>
+          <input type = "checkbox" value="three">
+          <label name="chk4-label">Ruby</label>
+          <input type = "checkbox" value="four">
+        </div>
 
-    </form>
+        <div class="form-group">
+          <textarea class="form-control"></textarea>
+        </div>
+
+        <input type="submit" id="submit" name="submit" value="submit" class="btn btn-primary">
+
+      </form>
+
+    </div>
   
     <script  src="js/index.js"></script>
   </body>
