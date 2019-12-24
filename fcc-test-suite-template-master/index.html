@@ -17,14 +17,19 @@
 
     <form id="survey-form">
 
-      <label>Enter Name:</label>
-      <input id="name" type="text" required />
+      <label id="name-label">Enter Name:</label>
+      <input id="name" type="text" required placeholder="Enter your name" />
 
-      <label>Enter Email:</label>
-      <input type="email" name="email" id="email" required/>
+      <label id="email-label">Enter Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Enter your email"/>
 
-      <label>Enter A Number:</label>
-      <input type="number" id="number" required/>
+      <label id="number-label">Enter A Number:</label>
+      <input type="number" id="number" required min="1" max="90" placeholder="Enter a numer between 1 and 90"/>
+
+      <select id="dropdown">
+        <option value="0">First option</option>
+        <option value="1">Second option</option>
+      </select>
 
     </form>
   
